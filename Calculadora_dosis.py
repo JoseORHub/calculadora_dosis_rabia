@@ -139,13 +139,6 @@ CSS = f"""
     padding: 0 !important;
   }}
   
-/* Radio seleccionado (círculo azul oscuro) */
-div[data-testid="stRadio"] input:checked + div {
-  background-color: #0033A0 !important; /* azul oscuro */
-  border-color: #0033A0 !important;
-}
-
-
   /* ── Input centrado ── */
   input {{
     text-align: center !important;
