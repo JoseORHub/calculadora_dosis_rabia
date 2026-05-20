@@ -144,6 +144,11 @@ CSS = f"""
   div[data-testid="stRadio"] input[type="radio"]:checked {{
     accent-color: #0033A0 !important;
   }}
+  
+  input[type="radio"] {{
+    accent-color: #0033A0 !important;
+  }}
+
 
   
   /* ── Input centrado ── */
