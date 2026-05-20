@@ -127,13 +127,9 @@ CSS = f"""
   div[data-testid="stRadio"] {{
     border: none !important;
     box-shadow: none !important;
-    background-color: {AZUL_SURA} !important;
-    color: {BLANCO} !important;
   }}
   div[data-testid="stRadio"] > label {{
     display: none;
-    background-color: {AZUL_SURA} !important;
-    color: {BLANCO} !important;
   }}
   div[data-testid="stRadio"] > div {{
     justify-content: center !important;
@@ -141,9 +137,14 @@ CSS = f"""
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
-    background-color: {AZUL_SURA} !important;
-    color: {BLANCO} !important;
   }}
+  
+/* Radio seleccionado (círculo azul oscuro) */
+div[data-testid="stRadio"] input:checked + div {
+  background-color: #0033A0 !important; /* azul oscuro */
+  border-color: #0033A0 !important;
+}
+
 
   /* ── Input centrado ── */
   input {{
