@@ -140,10 +140,9 @@ CSS = f"""
   }}
   
   
-  /* Cambiar color del radio seleccionado */
-  div[data-testid="stRadio"] input:checked ~ div svg {{
-    fill: #0033A0 !important;   /* azul oscuro */
-    stroke: #0033A0 !important;
+  /* Círculo seleccionado (radio) */
+  div[data-testid="stRadio"] input[type="radio"]:checked {{
+    accent-color: #0033A0 !important;
   }}
 
   
