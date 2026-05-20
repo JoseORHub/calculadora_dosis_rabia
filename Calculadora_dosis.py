@@ -25,7 +25,7 @@ GRIS_SUAVE       = "#CCCCCC"
 BLANCO           = "#FFFFFF"
 
 # -- Protocolo clínico --
-DOSIS_FACTOR_ML_POR_KG: float = 0.1   # mL por kg — actualizar aquí si cambia el protocolo
+DOSIS_FACTOR_ML_POR_KG: float = 40   # mL por kg — actualizar aquí si cambia el protocolo
 
 
 # ===========================================================================
