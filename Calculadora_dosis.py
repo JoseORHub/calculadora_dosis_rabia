@@ -127,12 +127,11 @@ CSS = f"""
   div[data-testid="stRadio"] {{
     border: none !important;
     box-shadow: none !important;
-    background-color: #0033A0 !important;
-    border-color: #0033A0 !important;
-
   }}
   div[data-testid="stRadio"] > label {{
     display: none;
+    background-color: #0033A0 !important;
+    border-color: #0033A0 !important;
   }}
   div[data-testid="stRadio"] > div {{
     justify-content: center !important;
