@@ -25,7 +25,7 @@ GRIS_SUAVE       = "#CCCCCC"
 BLANCO           = "#FFFFFF"
 
 # -- Protocolo clínico --
-DOSIS_FACTOR_ML_POR_KG: float = 40   # mL por kg — actualizar aquí si cambia el protocolo
+DOSIS_FACTOR_UI_POR_KG: float = 40   # UI por kg
 
 
 # ===========================================================================
@@ -34,20 +34,20 @@ DOSIS_FACTOR_ML_POR_KG: float = 40   # mL por kg — actualizar aquí si cambia 
 
 def calcular_dosis_ml(peso_kg: float) -> float:
     """
-    Calcula la dosis en mL según el peso del paciente.
+    Calcula la dosis en UI según el peso del paciente.
 
     Args:
         peso_kg: Peso del paciente en kilogramos. Debe ser > 0.
 
     Returns:
-        Dosis redondeada a 2 decimales en mL.
+        Dosis redondeada a 0 decimales en UI.
 
     Raises:
         ValueError: Si el peso no es un número positivo.
     """
     if peso_kg <= 0:
         raise ValueError(f"El peso debe ser mayor que 0 kg (recibido: {peso_kg})")
-    return round(peso_kg * DOSIS_FACTOR_ML_POR_KG, 2)
+    return round(peso_kg * DOSIS_FACTOR_UI_POR_KG, 0)
 
 
 def parsear_peso(texto: str) -> float:
